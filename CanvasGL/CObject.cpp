@@ -8,6 +8,11 @@ void CObject::OnUpdate() {}
 void CObject::OnRender() {}
 void CObject::Draw() {}
 
+void CObject::Move(float x, float y) {
+	for (auto &c : coords)
+		c->Set(c->GetX() + x, c->GetY() + y);
+}
+
 void CObject::Translate(Coord c) {
 
 }
@@ -39,4 +44,12 @@ void CObject::Rotate(float angle) {
 
 void CObject::Scale(float sx, float sy) {
 
+}
+
+void CObject::SetPivot(Coord *c) {
+	this->pivot = c;
+}
+
+Coord *CObject::GetPivot() {
+	return pivot;
 }

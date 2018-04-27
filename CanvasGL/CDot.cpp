@@ -5,6 +5,7 @@
 
 CDot::CDot(Coord coord) : coord(coord) {
 	coords.emplace_back(&coord);
+	SetPivot(&coord);
 }
 CDot::~CDot() {}
 

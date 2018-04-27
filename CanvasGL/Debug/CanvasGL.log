@@ -1,13 +1,4 @@
 ﻿  Canvas.cpp
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(108): warning C4305: 'argumento': truncamento de 'double' para 'float'
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(112): warning C4305: 'argumento': truncamento de 'double' para 'float'
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(116): warning C4305: 'argumento': truncamento de 'double' para 'float'
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(120): warning C4305: 'argumento': truncamento de 'double' para 'float'
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(138): warning C4244: 'inicializando': conversão de 'float' para 'int', possível perda de dados
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(138): warning C4244: '+=': conversão de 'float' para 'int', possível perda de dados
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(139): warning C4244: 'argumento': conversão de 'int' para 'float', possível perda de dados
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(140): warning C4244: 'inicializando': conversão de 'float' para 'int', possível perda de dados
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(140): warning C4244: '+=': conversão de 'float' para 'int', possível perda de dados
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(141): warning C4244: 'argumento': conversão de 'int' para 'float', possível perda de dados
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(121): warning C4018: '<': incompatibilidade de signed/unsigned
   CanvasGL.vcxproj -> D:\Development\Workspace\VisualStudioProjects\CanvasGL\Debug\CanvasGL.exe
   CanvasGL.vcxproj -> D:\Development\Workspace\VisualStudioProjects\CanvasGL\Debug\CanvasGL.pdb (Partial PDB)

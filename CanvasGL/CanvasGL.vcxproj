@@ -151,6 +151,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Canvas.h" />
     <ClInclude Include="CanvasApp.h" />
     <ClInclude Include="CDot.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="CTriangle.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Canvas.cpp" />
     <ClCompile Include="CanvasApp.cpp" />
     <ClCompile Include="CDot.cpp" />

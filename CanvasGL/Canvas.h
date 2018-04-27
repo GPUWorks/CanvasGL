@@ -9,30 +9,26 @@ public:
 
 	Canvas();
 	~Canvas();
-	
+
 	void Start(int argc, char *argv[]);
 	virtual void OnStart();
 	virtual void OnUpdate();
-	virtual void OnMouse();
-	virtual void OnKeyboard();
+	virtual void OnMouseButtonPressed(int button, int state, int x, int y);
+	virtual void OnKeyboardKeyPressed(unsigned char key, int x, int y);
+	virtual void OnSpecialKeyPressed(int key, int x, int y);
 
 	void PlaceObject(CObject*);
-	void Zoom(float zoom);
-	void MoveX(float offset);
-	void MoveY(float offset);
+	void SelectObject(CObject*);
 
 private:
-	float zoom;
-	float xOffset;
-	float yOffset;
+	CObject *selectedObject = nullptr;
 
-	virtual void Init2D(float r, float g, float b);
 	void Update();
 	void Render();
-	void DrawGrid();
 	friend void HandleMouseInput(int button, int state, int x, int y);
 	friend void HandleKeyboardInput(unsigned char key, int x, int y);
 	friend void HandleSpecialInput(int key, int x, int y);
+	friend void HandlePassiveMouseInput(int x, int y);
 	friend void _Render();
 
 };

@@ -57,6 +57,9 @@
     <ClInclude Include="Color.h">
       <Filter>Arquivos de Cabeçalho\Canvas</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Arquivos de Cabeçalho\Canvas</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -87,6 +90,9 @@
       <Filter>Arquivos de Origem\Drawables</Filter>
     </ClCompile>
     <ClCompile Include="Color.cpp">
+      <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
       <Filter>Arquivos de Origem\Canvas</Filter>
     </ClCompile>
   </ItemGroup>
