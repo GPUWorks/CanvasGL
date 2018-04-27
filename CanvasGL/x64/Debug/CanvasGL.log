@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (CanvasGL_Old.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp_glutInitWindowPosition referenciado na função "public: void __cdecl Canvas::Start(int,char * * const)" (?Start@Canvas@@QEAAXHQEAPEAD@Z)
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp_glutInitWindowSize referenciado na função "public: void __cdecl Canvas::Start(int,char * * const)" (?Start@Canvas@@QEAAXHQEAPEAD@Z)
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp_glutInitDisplayMode referenciado na função "public: void __cdecl Canvas::Start(int,char * * const)" (?Start@Canvas@@QEAAXHQEAPEAD@Z)
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp_glutMainLoop referenciado na função "public: void __cdecl Canvas::Start(int,char * * const)" (?Start@Canvas@@QEAAXHQEAPEAD@Z)
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp_glutDisplayFunc referenciado na função "public: void __cdecl Canvas::Start(int,char * * const)" (?Start@Canvas@@QEAAXHQEAPEAD@Z)
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp___glutInitWithExit referenciado na função glutInit_ATEXIT_HACK
+Canvas.obj : error LNK2019: símbolo externo indefinido __imp___glutCreateWindowWithExit referenciado na função glutCreateWindow_ATEXIT_HACK
+D:\Development\Libraries\C++\freeglut\lib\freeglut.lib : warning LNK4272: o tipo de máquina da biblioteca 'X86' está em conflito com o tipo de máquina de destino 'x64'
+D:\Development\Libraries\C++\glew-1.11.0\lib\glew32.lib : warning LNK4272: o tipo de máquina da biblioteca 'X86' está em conflito com o tipo de máquina de destino 'x64'
+D:\Development\Workspace\VisualStudioProjects\CanvasGL\x64\Debug\CanvasGL.exe : fatal error LNK1120: 7 externo não resolvidos

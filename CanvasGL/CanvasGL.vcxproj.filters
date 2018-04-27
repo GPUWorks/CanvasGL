@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Drawables">
+      <UniqueIdentifier>{f96cbd5f-5107-4148-a814-1dd624a774a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Drawables">
+      <UniqueIdentifier>{c5d3d924-c2c5-4cf2-9581-6fa5cef6758d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Canvas">
+      <UniqueIdentifier>{74a40862-fbf6-42e2-8e4d-14d31e1d7840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Canvas">
+      <UniqueIdentifier>{1db8b7d4-9b3b-45e7-87e8-0282335ad854}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CanvasApp.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.h">
+      <Filter>Arquivos de Cabeçalho\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="Coord.h">
+      <Filter>Arquivos de Cabeçalho\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawer.h">
+      <Filter>Arquivos de Cabeçalho\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="CObject.h">
+      <Filter>Arquivos de Cabeçalho\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="CLine.h">
+      <Filter>Arquivos de Cabeçalho\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="CTriangle.h">
+      <Filter>Arquivos de Cabeçalho\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="CDot.h">
+      <Filter>Arquivos de Cabeçalho\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Arquivos de Cabeçalho\Canvas</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasApp.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Coord.cpp">
+      <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawer.cpp">
+      <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="CObject.cpp">
+      <Filter>Arquivos de Origem\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="CLine.cpp">
+      <Filter>Arquivos de Origem\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="CTriangle.cpp">
+      <Filter>Arquivos de Origem\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="CDot.cpp">
+      <Filter>Arquivos de Origem\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
