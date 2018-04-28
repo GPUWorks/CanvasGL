@@ -1,6 +1,8 @@
 #include "Coord.h"
 #include <GL\glut.h>
 
+Coord::Coord() : x(0), y(0) {}
+
 Coord::Coord(float x, float y) {
 	Set(x, y);
 }

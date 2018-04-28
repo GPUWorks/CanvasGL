@@ -3,6 +3,15 @@
 #include <glm\matrix.hpp>
 #include <glm\glm.hpp>
 
+CObject::CObject() {}
+CObject::~CObject() {
+	for (int i = 0; i < coords.size(); i++) {
+		Coord *coord = coords.at(i);
+		coords.erase(coords.begin() + i);
+		delete coord;
+	}
+}
+
 void CObject::OnStart() {}
 void CObject::OnUpdate() {}
 void CObject::OnRender() {}
@@ -52,4 +61,8 @@ void CObject::SetPivot(Coord *c) {
 
 Coord *CObject::GetPivot() {
 	return pivot;
+}
+
+void CObject::Destroy() {
+	delete this;
 }

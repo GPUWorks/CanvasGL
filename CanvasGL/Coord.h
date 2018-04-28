@@ -1,6 +1,7 @@
 #pragma once
 class Coord {
 public:
+	Coord();
 	Coord(float x, float y);
 	~Coord();
 

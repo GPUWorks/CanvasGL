@@ -1,4 +1,9 @@
 ﻿  Canvas.cpp
-d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(121): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(127): warning C4305: 'argumento': truncamento de 'double' para 'float'
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(149): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(184): warning C4244: 'argumento': conversão de 'int' para 'float', possível perda de dados
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(204): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(212): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\development\workspace\visualstudioprojects\canvasgl\canvasgl\canvas.cpp(243): warning C4018: '<': incompatibilidade de signed/unsigned
   CanvasGL.vcxproj -> D:\Development\Workspace\VisualStudioProjects\CanvasGL\Debug\CanvasGL.exe
   CanvasGL.vcxproj -> D:\Development\Workspace\VisualStudioProjects\CanvasGL\Debug\CanvasGL.pdb (Partial PDB)

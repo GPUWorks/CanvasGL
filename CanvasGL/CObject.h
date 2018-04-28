@@ -6,9 +6,13 @@ class CObject {
 public:
 	std::vector<Coord*> coords;
 
+	CObject();
+	~CObject();
+
 	virtual void OnStart();
 	virtual void OnUpdate();
 	virtual void OnRender();
+	virtual void Destroy();
 
 	void Move(float x, float y);
 	void Translate(Coord c);

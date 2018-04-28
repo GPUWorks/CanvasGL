@@ -43,3 +43,14 @@ void Camera::Refresh() {
 	glMatrixMode(GL_MODELVIEW);
 }
 
+Coord Camera::ScreenToWorld(Coord c) {
+	float zoom = Camera::zoom;
+	float xOffset = Camera::xOffset, yOffset = Camera::yOffset;
+
+	float wx = (c.GetX() + xOffset * glutGet(GLUT_WINDOW_WIDTH));
+	float wy = ((glutGet(GLUT_WINDOW_HEIGHT) - c.GetY()) + yOffset * glutGet(GLUT_WINDOW_HEIGHT));
+	wx += c.GetX() * (zoom - 1);
+	wy += (glutGet(GLUT_WINDOW_HEIGHT) - c.GetY()) * (zoom - 1);
+	return Coord(wx, wy);
+}
+
