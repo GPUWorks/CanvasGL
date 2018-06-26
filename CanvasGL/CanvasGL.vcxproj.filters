@@ -30,9 +30,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CanvasApp.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Canvas.h">
       <Filter>Arquivos de Cabeçalho\Canvas</Filter>
     </ClInclude>
@@ -60,12 +57,24 @@
     <ClInclude Include="Camera.h">
       <Filter>Arquivos de Cabeçalho\Canvas</Filter>
     </ClInclude>
+    <ClInclude Include="CCircle.h">
+      <Filter>Arquivos de Cabeçalho\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasGL.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Arquivos de Cabeçalho\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="CRectangle.h">
+      <Filter>Arquivos de Cabeçalho\Drawables</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="CanvasApp.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Coord.cpp">
@@ -94,6 +103,18 @@
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle.cpp">
+      <Filter>Arquivos de Origem\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Arquivos de Origem\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="CRectangle.cpp">
+      <Filter>Arquivos de Origem\Drawables</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

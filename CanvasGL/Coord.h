@@ -1,4 +1,5 @@
 #pragma once
+
 class Coord {
 public:
 	Coord();
@@ -10,6 +11,8 @@ public:
 	void SetX(float x);
 	void SetY(float y);
 	void Set(float x, float y);
+
+	float Distance(Coord c);
 
 private:
 	float x, y;

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "CObject.h"
 #include "Coord.h"
+#include "CObject.h"
 
 class CDot : public CObject {
 public:

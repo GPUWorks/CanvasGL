@@ -2,12 +2,13 @@
 
 #include "Canvas.h"
 
-class CanvasApp {
+class Global {
 public:
+
 	static Canvas canvas;
 
-	CanvasApp();
-	~CanvasApp();
+	Global();
+	~Global();
 	static void Start(int argc, char *argv[]);
 
 };

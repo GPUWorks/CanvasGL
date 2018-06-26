@@ -32,6 +32,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -39,6 +40,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -90,6 +92,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Development\Libraries\C++\glm;D:\Development\Libraries\C++\freeglut\include;D:\Development\Libraries\C++\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +123,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Development\Libraries\C++\glm;D:\Development\Libraries\C++\freeglut\include;D:\Development\Libraries\C++\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,7 +157,10 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Canvas.h" />
-    <ClInclude Include="CanvasApp.h" />
+    <ClInclude Include="CRectangle.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="CanvasGL.h" />
+    <ClInclude Include="CCircle.h" />
     <ClInclude Include="CDot.h" />
     <ClInclude Include="CObject.h" />
     <ClInclude Include="Color.h" />
@@ -161,11 +168,14 @@
     <ClInclude Include="Drawer.h" />
     <ClInclude Include="CLine.h" />
     <ClInclude Include="CTriangle.h" />
+    <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Canvas.cpp" />
-    <ClCompile Include="CanvasApp.cpp" />
+    <ClCompile Include="CRectangle.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="CCircle.cpp" />
     <ClCompile Include="CDot.cpp" />
     <ClCompile Include="CObject.cpp" />
     <ClCompile Include="Color.cpp" />
@@ -174,6 +184,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Coord.cpp" />
     <ClCompile Include="CTriangle.cpp" />
+    <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

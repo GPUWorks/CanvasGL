@@ -1,7 +1,16 @@
 #pragma once
 
 #include <vector>
+#include "Coord.h"
 #include "CObject.h"
+
+#define NONE -1
+#define SELECT 0
+#define DOT 1
+#define LINE 2
+#define TRIANGLE 3
+#define RECTANGLE 4
+#define CIRCLE 5
 
 class Canvas {
 public:
@@ -28,9 +37,11 @@ public:
 
 private:
 	CObject *selectedObject = nullptr;
-	CObject *buldingObject = nullptr;
+	CObject *buildingObject = nullptr;
+	int buildingObjectType = SELECT;
 	bool isBuilding = false;
 	Coord mousePos = {};
+	int numberOfActions = 0;
 
 	// Life Cycle
 	void Update();

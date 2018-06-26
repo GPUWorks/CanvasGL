@@ -1,7 +1,8 @@
 #include "CLine.h"
-#include <GL\glut.h>
-#include <iostream>
+#include <GL/glew.h>
+#include <glm/glm.hpp>
 #include "Drawer.h"
+#include "Util.h"
 
 // Constructors and Desctructors
 CLine::CLine(Coord start, Coord end) : start(start), end(end) {
@@ -16,5 +17,9 @@ Coord CLine::GetStart()	{ return start; }
 Coord CLine::GetEnd()	{ return end; }
 
 void CLine::Draw() {
-	Drawer::DrawLine(start, end);
+	Drawer::DrawLine(start, end, color);
+}
+
+bool CLine::Belongs(Coord c) {
+	return Util::BelongToLine(*coords.at(0), *coords.at(1), c, 10);
 }

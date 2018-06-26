@@ -1,12 +1,11 @@
 #include "Coord.h"
-#include <GL\glut.h>
+#include <cmath>
 
 Coord::Coord() : x(0), y(0) {}
 
 Coord::Coord(float x, float y) {
 	Set(x, y);
 }
-
 
 Coord::~Coord() {
 }
@@ -30,4 +29,8 @@ void Coord::SetY(float y) {
 void Coord::Set(float x, float y) {
 	SetX(x);
 	SetY(y);
+}
+
+float Coord::Distance(Coord c) {
+	return sqrt(pow(GetX() - c.GetX(), 2) + pow(GetY() - c.GetY(), 2));
 }

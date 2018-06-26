@@ -1,7 +1,7 @@
 #pragma once
 
-#include "CObject.h"
 #include "Coord.h"
+#include "CObject.h"
 
 class CLine : virtual public CObject {
 private:
@@ -14,6 +14,8 @@ public:
 
 	Coord GetStart();
 	Coord GetEnd();
+
+	virtual bool Belongs(Coord c) override;
 	virtual void Draw() override;
 
 };

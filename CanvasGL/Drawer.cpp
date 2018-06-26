@@ -1,7 +1,6 @@
 #include "Drawer.h"
-#include "Coord.h"
-#include <GL\glut.h>
-#include <glm\glm.hpp>
+#include <GL/glew.h>
+#include <GL/glut.h>
 #include "Camera.h"
 
 # define M_PI 3.14159265358979323846  /* pi */
@@ -11,7 +10,7 @@ Drawer::~Drawer() {}
 
 void Drawer::DrawLine(Coord c1, Coord c2) {
 	glBegin(GL_LINES);
-		glColor3f(1,1,1);
+		glColor3f(255, 255, 255);
 		glVertex2f(c1.GetX() / glutGet(GLUT_WINDOW_WIDTH), c1.GetY() / glutGet(GLUT_WINDOW_HEIGHT));
 		glVertex2f(c2.GetX() / glutGet(GLUT_WINDOW_WIDTH), c2.GetY() / glutGet(GLUT_WINDOW_HEIGHT));
 	glEnd();
@@ -19,7 +18,7 @@ void Drawer::DrawLine(Coord c1, Coord c2) {
 
 void Drawer::DrawLine(Coord c1, Coord c2, Color color) {
 	glBegin(GL_LINES);
-		glColor4ub(color.GetRed(), color.GetGreen(), color.GetBlue(), color.GetAlpha());
+		glColor4ub(color.r, color.g, color.b, color.a);
 		glVertex2f(c1.GetX() / glutGet(GLUT_WINDOW_WIDTH), c1.GetY() / glutGet(GLUT_WINDOW_HEIGHT));
 		glVertex2f(c2.GetX() / glutGet(GLUT_WINDOW_WIDTH), c2.GetY() / glutGet(GLUT_WINDOW_HEIGHT));
 	glEnd();
@@ -47,7 +46,7 @@ void Drawer::DrawGrid(int interval, Color color) {
 
 void Drawer::DrawTriangle(Coord c1, Coord c2, Coord c3, Color color) {
 	glBegin(GL_TRIANGLES);
-		glColor4ub(color.GetRed(), color.GetGreen(), color.GetBlue(), color.GetAlpha());
+		glColor4ub(color.r, color.g, color.b, color.a);
 		glVertex2f(c1.GetX() / glutGet(GLUT_WINDOW_WIDTH), c1.GetY() / glutGet(GLUT_WINDOW_HEIGHT));
 		glVertex2f(c2.GetX() / glutGet(GLUT_WINDOW_WIDTH), c2.GetY() / glutGet(GLUT_WINDOW_HEIGHT));
 		glVertex2f(c3.GetX() / glutGet(GLUT_WINDOW_WIDTH), c3.GetY() / glutGet(GLUT_WINDOW_HEIGHT));

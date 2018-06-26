@@ -1,7 +1,7 @@
 #include "CDot.h"
-#include <GL\glut.h>
+#include <GL/glew.h>
+#include <glm/glm.hpp>
 #include "Drawer.h"
-
 
 CDot::CDot(Coord coord) : coord(coord) {
 	coords.emplace_back(&coord);

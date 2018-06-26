@@ -1,13 +1,17 @@
 #pragma once
-#include "Coord.h"
+
 #include <vector>
+#include "Coord.h"
+#include "CObject.h"
+#include "Color.h"
 
 class CObject {
 public:
 	std::vector<Coord*> coords;
+	Color color;
 
 	CObject();
-	~CObject();
+	virtual ~CObject();
 
 	virtual void OnStart();
 	virtual void OnUpdate();
@@ -18,10 +22,11 @@ public:
 	void Translate(Coord c);
 	void Rotate(float angle);
 	void Scale(float sx, float sy);
-
+	
 	void SetPivot(Coord *c);
 	Coord *GetPivot();
 
+	virtual bool Belongs(Coord c);
 	virtual void Draw() = 0;
 
 private:

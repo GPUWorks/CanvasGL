@@ -1,5 +1,7 @@
 #include "Camera.h"
-#include "GL\glut.h"
+
+#include <GL/glew.h>
+#include <GL/glut.h>
 
 float Camera::zoom = 1.0f;
 float Camera::xOffset = 0.0f;
